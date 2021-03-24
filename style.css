@@ -1,0 +1,132 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* FUNDO */
+
+body{
+    background-image: url(arquivo/m-d-playing.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+main{
+    height: 100vh;
+}
+.video{
+    position: fixed;
+    z-index: -100;
+    width: 100%;
+    height: auto;
+    /*
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);*/
+}
+/* CABEÇALHO */
+
+.cabecalho{
+    text-align: center;
+    height: 80%;
+    padding-top: 20px;
+}
+.cabecalho div{
+    display: inline-block;
+    padding: 20px 30px;
+}
+.divLogo img{
+    width: 350px;
+}
+.caixaInput{
+    position: relative;
+    bottom: 35px;
+}
+
+/* BOTOES */
+
+label{
+    color: #b08745;
+    margin: 10px;
+    font-size: 20px;
+}
+.inputTXT{
+    padding: 10px 0;
+    font-size: 16px;
+    padding: 8px 5px;
+    color: #fff;
+    border: none;
+    background: rgb(80, 80, 80, 0.7);
+    border-radius: 6px;
+}
+.inputSubmit{
+    background: #b08745;
+    font-size: 23px;
+    font-weight: bolder;
+    padding: 10px 25px;
+    border: 2px solid #b08744;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+}
+.caixaInput img{
+    width: 30px;
+    position: relative;
+    top: 13px;
+    right: 5px;
+}
+
+/* RODAPE */
+.icon img{
+    width: 45px;
+    padding: 10px;
+}
+.icon{
+    text-align: center;
+}
+
+/* RESPONSIVIDADE */
+@media(max-width: 1130px){
+    .video{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    }
+}
+@media(max-width: 869px){
+    .caixaInput{
+        width: 100%;
+    }
+    .caixaInput label{
+        height: 20vh;
+        display: inline-block;
+        width: 100%;
+        margin: auto;
+        padding: 15px 0px 15px 0px ;
+    }
+    .caixaInput .inputTXT{
+        padding: 15px 5px;
+        width: 50%;
+        margin: 0px;
+    }
+    
+    .cabecalho{
+        height: 80%;
+    }
+    .cabecalho div{
+        padding: 20px 0px;
+    }
+}
