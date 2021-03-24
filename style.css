@@ -75,7 +75,7 @@ label{
 }
 
 /* RESPONSIVIDADE */
-@media(max-width: 1092px){
+@media(max-width: 1080px){
     .video{
         display: none;
     }
